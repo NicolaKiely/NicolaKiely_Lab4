@@ -36,11 +36,14 @@ public class MainActivity extends AppCompatActivity {
 
     private PdUiDispatcher dispatcher; //must declare this to use later, used to receive data from sendEvents
 
+    TextView myCounter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);//Mandatory
         setContentView(R.layout.activity_main);//Mandatory
 
+        myCounter = (TextView)   findViewById(R.id.counter);
 
         Switch onOffSwitch = (Switch) findViewById(R.id.onOffSwitch);//declared the switch here pointing to id onOffSwitch
 

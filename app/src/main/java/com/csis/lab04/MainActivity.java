@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
     private PdUiDispatcher dispatcher; //must declare this to use later, used to receive data from sendEvents
 
     TextView myCounter;
+    //TextView oscFreq;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);//Mandatory
 
         myCounter = (TextView)   findViewById(R.id.counter);
+        //oscFreq = (TextView)   findViewById(R.id.oscFreq);
 
         Switch onOffSwitch = (Switch) findViewById(R.id.onOffSwitch);//declared the switch here pointing to id onOffSwitch
 
@@ -93,6 +95,68 @@ public class MainActivity extends AppCompatActivity {
         PdBase.sendBang(receiver); //send bang to receiveEvent
     }
 
+    //<---THIS METHOD INITIALISES AUDIO SERVER----->
+    private void initPD() throws IOException
+    {
+        int sampleRate = AudioParameters.suggestSampleRate(); //get sample rate from system
+        PdAudio.initAudio(sampleRate,0,2,8,true); //initialise audio engine
+
+        dispatcher = new PdUiDispatcher(); //create UI dispatcher
+        PdBase.setReceiver(dispatcher); //set dispatcher to receive items from puredata patches
+
+        dispatcher.addListener("sendCounter",receiver1);
+        PdBase.subscribe("sendCounter");
+    }
+
+    private PdReceiver receiver1 = new PdReceiver() {
+
+        private void pdPost(final String msg) {
+            Log.e("RECEIVED:", msg);
+
+            new Handler().post(new Runnable() {
+                @Override
+                public void run() {
+
+                }
+            });
+        }
+
+        @Override
+        public void print(String s) {
+            Log.i("PRINT",s);
+            Toast.makeText(getBaseContext(),s,Toast.LENGTH_LONG);
+        }
+
+        @Override
+        public void receiveBang(String source)
+        {
+            pdPost("bang");
+        }
+
+        @Override public void receiveFloat(String source, float x) {
+            pdPost("float: " + x);
+            if(source.equals("sendCounter")) {
+                myCounter.setText(String.valueOf(x));
+             }
+        }
+
+        @Override
+        public void receiveList(String source, Object... args) {
+            pdPost("list: " + Arrays.toString(args));
+
+        }
+
+        @Override
+        public void receiveMessage(String source, String symbol, Object... args) {
+            pdPost("message: " + Arrays.toString(args));
+
+    }
+        @Override
+        public void receiveSymbol(String source, String symbol) {
+            pdPost("symbol: " + symbol);
+    }
+    };
+
 
     //<---THIS METHOD LOADS SPECIFIED PATCH NAME----->
     private void loadPDPatch(String patchName) throws IOException
@@ -108,15 +172,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    //<---THIS METHOD INITIALISES AUDIO SERVER----->
-    private void initPD() throws IOException
-    {
-        int sampleRate = AudioParameters.suggestSampleRate(); //get sample rate from system
-        PdAudio.initAudio(sampleRate,0,2,8,true); //initialise audio engine
 
-        dispatcher = new PdUiDispatcher(); //create UI dispatcher
-        PdBase.setReceiver(dispatcher); //set dispatcher to receive items from puredata patches
-
-    }
 
 }

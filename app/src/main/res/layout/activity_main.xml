@@ -33,10 +33,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="51dp"
-        android:id="@+id/seekBar"
+        android:id="@+id/slider1"
         android:layout_below="@+id/Freq"
         android:layout_alignEnd="@+id/Freq"
-        android:layout_marginEnd="12dp" />
+        android:layout_marginEnd="12dp"
+        android:max="100" />
 
     <TextView
         android:text="Frequency Value"

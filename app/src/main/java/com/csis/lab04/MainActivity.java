@@ -30,12 +30,15 @@ import org.puredata.core.utils.IoUtils;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.channels.SeekableByteChannel;
 import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity {
 
     private PdUiDispatcher dispatcher; //must declare this to use later, used to receive data from sendEvents
+    private SeekBar slider1;
 
+float slide1Value = 0.0f;
 
     TextView myCounter;
     TextView myOscFreq;
@@ -70,8 +73,34 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    slider1 = (SeekBar) findViewById(R.id.slider1);
 
+    slider1.setOnSeekBarChangeListener(
+            new SeekBar.OnSeekBarChangeListener()
 
+    {
+
+        @Override
+
+        public void onProgressChanged(SeekBar SeekBar, int progress, boolean fromUser)
+
+        { slide1Value = progress / 100.0f;
+
+            sendFloatPD("slider1", slide1Value);
+
+        }
+
+        @Override public void onStartTrackingTouch(SeekBar SeekBar) {
+
+    }
+
+        @Override
+
+        public void onStopTrackingTouch(SeekBar SeekBar) {
+
+    }
+
+    });
 
     @Override //If screen is resumed
     protected void onResume(){

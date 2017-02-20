@@ -39,48 +39,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/Nicola/Desktop/NicolaKiely_Lab4/app/build/intermediates/exploded-aar/com.noisepages.nettoyeur/midi/1.0.0-rc1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="a35b73ff5c4ab6af57b21c03b9b3aa234d816a7f">
-        <dex dex="/Users/Nicola/Desktop/NicolaKiely_Lab4/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.noisepages.nettoyeur-midi-1.0.0-rc1_2524e5b71f9bf542ba7cb21e6401a843c4b262ef/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Nicola/Desktop/NicolaKiely_Lab4/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
-        <dex dex="/Users/Nicola/Desktop/NicolaKiely_Lab4/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.1.0_727f070877b950df8ea7e5b6f2d7b907e303388d/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/Nicola/Desktop/NicolaKiely_Lab4/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="aee64634871d88a419d59eb743c1258a60f19700">
         <dex dex="/Users/Nicola/Desktop/NicolaKiely_Lab4/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.1.0_b90bc3598b6789ac77ff33b3ae9fa37d6772f379/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Nicola/Desktop/NicolaKiely_Lab4/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
-        <dex dex="/Users/Nicola/Desktop/NicolaKiely_Lab4/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.1.0_de7df0df769a2af863f9201434baf7219cfef00f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Nicola/Desktop/NicolaKiely_Lab4/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f09c461b0eaa1eec66959145636d4d5b1913d2aa">
-        <dex dex="/Users/Nicola/Desktop/NicolaKiely_Lab4/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_e2944a42ce503af338f893a3e3e00a2b7dc2b0e2/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -99,15 +63,6 @@
         revision="25.0.2"
         sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
         <dex dex="/Users/Nicola/Desktop/NicolaKiely_Lab4/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.1.0_517ebd13d28177bd2fe19bed7463c3a42a232f93/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Nicola/Desktop/NicolaKiely_Lab4/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="243a448425094028e864f8c1a15e0badaf00b436">
-        <dex dex="/Users/Nicola/Desktop/NicolaKiely_Lab4/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_61759ae8ba72914b674b9958113c0545e5f5e7e5/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -135,6 +90,51 @@
         revision="25.0.2"
         sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
         <dex dex="/Users/Nicola/Desktop/NicolaKiely_Lab4/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.1.0_c002de215ddb29b0270c52754c7bd2f786737dce/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Nicola/Desktop/NicolaKiely_Lab4/app/build/intermediates/exploded-aar/com.noisepages.nettoyeur/midi/1.0.0-rc1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a35b73ff5c4ab6af57b21c03b9b3aa234d816a7f">
+        <dex dex="/Users/Nicola/Desktop/NicolaKiely_Lab4/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.noisepages.nettoyeur-midi-1.0.0-rc1_2524e5b71f9bf542ba7cb21e6401a843c4b262ef/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Nicola/Desktop/NicolaKiely_Lab4/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="/Users/Nicola/Desktop/NicolaKiely_Lab4/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.1.0_727f070877b950df8ea7e5b6f2d7b907e303388d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Nicola/Desktop/NicolaKiely_Lab4/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
+        <dex dex="/Users/Nicola/Desktop/NicolaKiely_Lab4/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.1.0_de7df0df769a2af863f9201434baf7219cfef00f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Nicola/Desktop/NicolaKiely_Lab4/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a45a187989d61d8e81d8fb27545bb79996df9646">
+        <dex dex="/Users/Nicola/Desktop/NicolaKiely_Lab4/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_e2944a42ce503af338f893a3e3e00a2b7dc2b0e2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Nicola/Desktop/NicolaKiely_Lab4/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d016d39e758ec38b20539f75949cc9e34bf7a07b">
+        <dex dex="/Users/Nicola/Desktop/NicolaKiely_Lab4/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_61759ae8ba72914b674b9958113c0545e5f5e7e5/classes.dex" />
     </item>
 
 </items>

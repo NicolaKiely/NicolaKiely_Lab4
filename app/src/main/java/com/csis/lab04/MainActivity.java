@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
     private PdUiDispatcher dispatcher; //must declare this to use later, used to receive data from sendEvents
 
+
     TextView myCounter;
     //TextView oscFreq;
 
@@ -68,6 +69,9 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
+
+
+
 
     @Override //If screen is resumed
     protected void onResume(){
@@ -140,6 +144,7 @@ public class MainActivity extends AppCompatActivity {
              }
         }
 
+
         @Override
         public void receiveList(String source, Object... args) {
             pdPost("list: " + Arrays.toString(args));
@@ -156,6 +161,8 @@ public class MainActivity extends AppCompatActivity {
             pdPost("symbol: " + symbol);
     }
     };
+
+
 
 
     //<---THIS METHOD LOADS SPECIFIED PATCH NAME----->

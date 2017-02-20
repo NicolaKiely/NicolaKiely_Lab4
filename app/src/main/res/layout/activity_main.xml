@@ -20,15 +20,6 @@
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
 
-    <TextView
-        android:text="Frequency Value"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/counter"
-        android:layout_alignStart="@+id/counter"
-        android:layout_marginTop="31dp"
-        android:id="@+id/Freq" />
-
     <Switch
         android:text="Start/Stop"
         android:layout_width="wrap_content"
@@ -46,5 +37,14 @@
         android:layout_below="@+id/Freq"
         android:layout_alignEnd="@+id/Freq"
         android:layout_marginEnd="12dp" />
+
+    <TextView
+        android:text="Frequency Value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:id="@+id/Freq"
+        android:layout_below="@+id/counter"
+        android:layout_alignStart="@+id/counter" />
 
 </RelativeLayout>

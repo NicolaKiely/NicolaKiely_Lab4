@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     TextView myCounter;
-    //TextView oscFreq;
+    //TextView myOscFreq;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);//Mandatory
 
         myCounter = (TextView)   findViewById(R.id.counter);
-        //oscFreq = (TextView)   findViewById(R.id.oscFreq);
+        //myOscFreq = (TextView)   findViewById(R.id.oscFreq);
 
         Switch onOffSwitch = (Switch) findViewById(R.id.onOffSwitch);//declared the switch here pointing to id onOffSwitch
 
@@ -143,6 +143,9 @@ public class MainActivity extends AppCompatActivity {
                 myCounter.setText(String.valueOf(x));
              }
         }
+
+
+
 
 
         @Override

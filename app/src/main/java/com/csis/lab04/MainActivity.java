@@ -73,9 +73,9 @@ float slide1Value = 0.0f;
 
     }
 
-    slider1 = (SeekBar) findViewById(R.id.slider1);
+    //slider1 = (SeekBar) findViewById(R.id.slider1);
 
-    slider1.setOnSeekBarChangeListener(
+    /*slider1.setOnSeekBarChangeListener(
             new SeekBar.OnSeekBarChangeListener()
 
     {
@@ -101,7 +101,7 @@ float slide1Value = 0.0f;
     }
 
     });
-
+*/
     @Override //If screen is resumed
     protected void onResume(){
         super.onResume();
